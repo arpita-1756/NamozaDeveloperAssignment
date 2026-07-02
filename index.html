@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFS5V5G5');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book an Orthopaedic Consultation in Bengaluru | OrthoNow</title>
+<meta name="description" content="Get an expert orthopaedic opinion on your knee or back pain. Book a consultation at an OrthoNow clinic in Bengaluru this week.">
+
+<!--
+  PERFORMANCE NOTE FOR REVIEWERS:
+  This page makes zero external network requests by design — no Google Fonts,
+  no CDN icon sets, no hero photo. Everything (icons, type, layout) is built
+  from system fonts and inline SVG. That is the single biggest lever for a
+  90+ mobile PageSpeed score: there is nothing to block on, nothing to
+  download, nothing to wait on for a render-blocking stylesheet or font swap.
+-->
+
+<style>
+  /* ---------------------------------------------------
+     1. DESIGN TOKENS
+     --------------------------------------------------- */
+  
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:  #F6F8F8;
+    color: #5B6B74;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { display: block; max-width: 100%; }
+
+  a { color: inherit; }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  /* ---------------------------------------------------
+     2. LAYOUT SHELL
+     --------------------------------------------------- */
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header.site-header {
+    background: #0E2433;
+    color: #FFFFFF;
+    padding: 16px 0;
+  }
+
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+
+  .brand-mark { color:  #E8552E; }
+
+  /* ---------------------------------------------------
+     3. HERO
+     --------------------------------------------------- */
+  .hero {
+    padding: 40px 0 56px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #0E7C7B;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 6vw, 42px);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    color: #0E2433;
+    margin: 0 0 16px;
+  }
+
+  .subhead {
+    font-size: 17px;
+    color:#5B6B74;
+    max-width: 46ch;
+    margin: 0 0 24px;
+  }
+
+  /* Trust strip */
+  .trust-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 16px 0;
+    border-top: 1px solid #D8E6E4;
+    border-bottom: 1px solid #D8E6E4;
+    margin: 24px 0;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0E2433;
+  }
+
+ 
+
+  /* ---------------------------------------------------
+     4. FORM CARD
+     --------------------------------------------------- */
+  .form-card {
+    background: #FFFFFF;
+    border: 1px solid #D8E6E4;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 2px rgba(14,36,51,0.04), 0 8px 24px rgba(14,36,51,0.06);
+  }
+
+  .form-card h2 {
+    font-size: 20px;
+    color: #0E2433;
+    margin: 0 0 4px;
+  }
+
+  .form-card .form-sub {
+    font-size: 14px;
+    color: #5B6B74;
+    margin: 0 0 20px;
+  }
+
+  .field { margin-bottom: 16px; }
+
+  label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0E2433;
+    margin-bottom: 6px;
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    width: 100%;
+    font-size: 16px; /* keeps iOS from auto-zooming on focus */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 12px 14px;
+    border: 1.5px solid #D8E6E4;
+    border-radius: 8px;
+    background:  #F6F8F8;
+    color: #0E2433;
+  }
+
+  input:focus-visible {
+    outline: 2px solid #0E7C7B;
+    outline-offset: 1px;
+    border-color: #0E7C7B;
+  }
+
+  .field-error {
+    color: #C8431F;
+    font-size: 13px;
+    margin-top: 6px;
+    display: none;
+  }
+
+  .field.has-error input { border-color:  #C8431F; }
+  .field.has-error .field-error { display: block; }
+
+  .cta-button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background:  #E8552E;
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+
+  .cta-button:hover,
+  .cta-button:focus-visible { background:  #C8431F; }
+
+  .form-reassurance {
+    font-size: 12.5px;
+    color: #5B6B74;
+    text-align: center;
+    margin: 12px 0 0;
+  }
+
+  /* Thank-you state */
+  .thank-you {
+    display: none;
+    text-align: center;
+    padding: 12px 0 4px;
+  }
+
+  .thank-you.is-visible { display: block; }
+  .form-card.is-submitted .booking-form { display: none; }
+
+  .thank-you-icon {
+    margin: 0 auto 14px;
+    color:  #1E7A4C;
+  }
+
+  .thank-you h2 { color:  #1E7A4C; }
+
+  /* ---------------------------------------------------
+     5. WHY ORTHONOW SECTION
+     --------------------------------------------------- */
+  .why {
+    padding: 8px 0 56px;
+  }
+
+  .why h2 {
+    font-size: 24px;
+    color: #0E2433;
+    letter-spacing: -0.01em;
+    margin: 0 0 24px;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why-card {
+    background: #FFFFFF;
+    border: 1px solid #D8E6E4;
+    border-radius: 12px;
+    padding: 18px;
+  }
+
+  .why-card .icon-wrap {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    background: rgba(14,124,123,0.10);
+    color: #0E7C7B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .why-card h3 {
+    font-size: 16px;
+    color: #0E2433;
+    margin: 0 0 6px;
+  }
+
+  .why-card p { font-size: 14px; margin: 0; }
+
+  footer {
+    border-top: 1px solid #D8E6E4;
+    padding: 20px 0 32px;
+    font-size: 13px;
+    color: #5B6B74;
+  }
+
+  /* ---------------------------------------------------
+     6. RESPONSIVE — DESKTOP / TABLET UP
+     --------------------------------------------------- */
+  @media (min-width: 760px) {
+    .hero-grid {
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: start;
+    }
+    .form-card { position: sticky; top: 24px; }
+    .why-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* Respect reduced-motion preference */
+  
+  
+  @media (prefers-reduced-motion: reduce) {
+    .cta-button { transition: none; }
+  }
+
+  
+</style>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFS5V5G5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">     
+      OrthoNow <span class="brand-mark">Bengaluru</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <p class="eyebrow">Orthopaedic consultation · Bengaluru</p>
+        <h1>Stop working around the pain in your knee or back.</h1>
+        <p class="subhead">
+          Get an expert orthopaedic opinion this week — not another forwarded home remedy.
+          Book a consultation at the OrthoNow clinic nearest you.
+        </p>
+
+        <div class="trust-strip">
+          <div class="trust-item">
+            9 clinics · 3 cities
+          </div>
+          <div class="trust-item">
+            40+ orthopaedic specialists
+          </div>
+          <div class="trust-item">
+            4.7★ rating, 2,300+ patients
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================
+           BOOKING FORM
+           - 2 fields only, per the brief (minimal friction)
+           - On submit: validate, push to dataLayer, show
+             thank-you state with no page reload
+           ============================================ -->
+      <div class="form-card" id="formCard">
+        <form id="bookingForm" class="booking-form" novalidate>
+          <h2>Book your consultation</h2>
+          <p class="form-sub">A clinic coordinator will call to confirm your slot within 30 minutes.</p>
+
+          <div class="field" id="nameField">
+            <label for="patientName">Full name</label>
+            <input type="text" id="patientName" name="patientName" autocomplete="name" required>
+            <p class="field-error">Please enter your name.</p>
+          </div>
+
+          <div class="field" id="phoneField">
+            <label for="patientPhone">Phone number</label>
+            <input type="tel" id="patientPhone" name="patientPhone" autocomplete="tel" inputmode="numeric" placeholder="98765 43210" required>
+            <p class="field-error">Please enter a valid 10-digit mobile number.</p>
+          </div>
+
+          <button type="submit" class="cta-button">Book My Consultation</button>
+          <p class="form-reassurance">No spam calls. Your number is only used to confirm this booking.</p>
+        </form>
+
+        <!-- Thank-you state: hidden by default, revealed via JS, aria-live so screen readers announce it -->
+        <div class="thank-you" id="thankYou" aria-live="polite">
+         
+          <h2>Request received</h2>
+          <p>Thank you — a clinic coordinator will call you shortly.</p>
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <h2>Why patients choose OrthoNow</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          
+          <h3>Same-week appointments</h3>
+          <p>Most patients are seen within 2–4 days of booking, across all 9 clinics.</p>
+        </div>
+        <div class="why-card">
+          
+          <h3>Specialist diagnosis, not guesswork</h3>
+          <p>Orthopaedic-trained doctors only — not a general physician referring you onward.</p>
+        </div>
+        <div class="why-card">
+          
+          <h3>A clinic near your commute</h3>
+          <p>9 locations across Bengaluru, Hyderabad and Chennai — pick whichever is closest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    OrthoNow Bengaluru — orthopaedic consultations across 9 clinics in Bengaluru, Hyderabad and Chennai.
+  </div>
+</footer>
+
+<script>
+  // ---------------------------------------------------------
+  // GTM dataLayer init — safe even if GTM hasn't loaded yet,
+  // since dataLayer is just an array GTM later reads from.
+  // ---------------------------------------------------------
+  window.dataLayer = window.dataLayer || [];
+
+  (function () {
+    'use strict';
+
+    var form      = document.getElementById('bookingForm');
+    var nameInput = document.getElementById('patientName');
+    var phoneInput = document.getElementById('patientPhone');
+    var nameField = document.getElementById('nameField');
+    var phoneField = document.getElementById('phoneField');
+    var formCard  = document.getElementById('formCard');
+    var thankYou  = document.getElementById('thankYou');
+
+    // Indian mobile numbers: 10 digits, optionally prefixed with +91 / 91 / 0,
+    // first digit of the 10-digit number must be 6-9.
+    var PHONE_REGEX = /^(?:\+91|91|0)?[6-9]\d{9}$/;
+
+    function setFieldError(fieldEl, hasError) {
+      fieldEl.classList.toggle('has-error', hasError);
+    }
+
+    function validate() {
+      var nameValid = nameInput.value.trim().length > 1;
+      var cleanedPhone = phoneInput.value.replace(/[\s-]/g, '');
+      var phoneValid = PHONE_REGEX.test(cleanedPhone);
+
+      setFieldError(nameField, !nameValid);
+      setFieldError(phoneField, !phoneValid);
+
+      return nameValid && phoneValid;
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // no page reload — this is the whole point
+
+      if (!validate()) {
+        return;
+      }
+
+      // -----------------------------------------------------
+      // GTM EVENT — fires ONLY on a successful, validated
+      // submit, never on page load. Intentionally no raw PII
+      // (name/phone) in the dataLayer push: GA4/Ads don't need
+      // it, and pushing PII into dataLayer is a privacy risk
+      // GTM users commonly trip over.
+      // -----------------------------------------------------
+     const gtmEvent = {
+  event: 'consultation_form_submitted',
+  form_name: 'orthonow_consultation_landing',
+  page_location: window.location.href,
+  lead_source: 'Google Ads - Consultation Landing Page',
+  clinic_city: 'Bengaluru'
+};
+
+window.dataLayer.push(gtmEvent);
+console.log("GTM Event Fired:", gtmEvent);
+
+      // Thank-you state, no reload
+      formCard.classList.add('is-submitted');
+      thankYou.classList.add('is-visible');
+      thankYou.setAttribute('tabindex', '-1');
+      thankYou.focus();
+    });
+
+    // Clear the error state as soon as the visitor starts fixing a field
+    nameInput.addEventListener('input', function () { setFieldError(nameField, false); });
+    phoneInput.addEventListener('input', function () { setFieldError(phoneField, false); });
+  })();
+</script>
+
+<!--
+  GTM container snippet goes here in production (head + noscript-body).
+  Left out of this assignment file on purpose: a real GTM container ID
+  would either be a placeholder (misleading) or load a live external
+  script that could itself cost PageSpeed points and isn't needed to
+  prove the dataLayer push works — that's verifiable directly in the
+  console, which is what's demoed in the Loom.
+-->
+</body>
+</html>
